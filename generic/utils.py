@@ -1,12 +1,10 @@
-import re
+"""	
+	utility functions.
+	you should not import anyting from models or views into this file.
+"""
 
-def parse_request(request, regex):
-
-    mat = re.search(
-            regex,
-            request.META['PATH_INFO'],
-            re.I | re.S | re.M
-        )
-    classname = mat.groups()[0]
-
-    return classname
+import datetime
+import os
+import sys
+import collections
+# etc.
